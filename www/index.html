@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf7f0">
+  <meta name="description" content="Descubre tu nivel de inglés, estudia temas guiados y desbloquea nuevas lecciones con LingoBloom.">
+  <title>LingoBloom | Academia de inglés</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="academy-header">
+    <a class="academy-logo" href="#inicio"><span aria-hidden="true">✿</span> LingoBloom</a>
+    <span class="header-note">Tu camino de A1 a C2</span>
+  </header>
+
+  <main class="academy-main" id="inicio">
+    <section class="academy-hero" aria-labelledby="hero-title">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> TU ENGLISH JOURNEY</span>
+      <h1 id="hero-title">Tu inglés <span>florece aquí.</span></h1>
+      <p>Descubre tu nivel, practica cada tema y desbloquea nuevas etapas. Tu progreso se guarda automáticamente en este navegador.</p>
+      <div class="hero-actions">
+        <button id="placementButton" class="btn" type="button"><span aria-hidden="true">✳</span> Descubrir mi nivel</button>
+        <button id="academyButton" class="btn secondary" type="button"><span aria-hidden="true">↗</span> Ir a mis lecciones</button>
+      </div>
+    </section>
+
+    <section class="academy-stats" aria-label="Tu progreso de aprendizaje">
+      <article class="stat"><span class="stat-icon">✿</span><div>Nivel actual<strong id="currentLevel">Por descubrir</strong></div></article>
+      <article class="stat"><span class="stat-icon">✓</span><div>Pruebas aprobadas<strong id="passedCount">0</strong></div></article>
+      <article class="stat"><span class="stat-icon">↗</span><div>Progreso total<strong id="progress">0%</strong></div></article>
+    </section>
+
+    <div id="app" aria-live="polite"></div>
+
+    <footer class="academy-footer"><a class="academy-logo" href="#inicio"><span aria-hidden="true">✿</span> LingoBloom</a><span>Learn a little every day.</span></footer>
+  </main>
+</body>
+</html>
